@@ -1,0 +1,27 @@
+# Ignore node modules and scraper artifacts
+node_modules/
+events/node_modules/
+.brave-playwright-profile/
+events/.brave-playwright-profile/
+
+# Ignore scrapers and script files
+events/*.mjs
+events/*.js
+events/*.json
+events/package-lock.json
+
+# Ignore raw scrapings, jsons and caches
+events/linkedin_posts_raw.json
+events/reference-data/
+events/output/website-data/
+
+# Ignore large generated HTML / PDF files if only MD and assets are desired
+*.pdf
+events/output/reports/*.pdf
+events/output/reports/*.html
+
+# Keep README, MD reports, and asset images
+!README.md
+!events/output/reports/*.md
+!events/output/assets/**
+
